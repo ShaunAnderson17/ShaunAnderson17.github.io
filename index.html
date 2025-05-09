@@ -1,128 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<style>
-    body {
-        background-color: #4d3245
-    } 
-
-    .intro {
-        font-size: 3rem;
-        color: #09a0a0;
-        text-indent: 9.5rem;
-        text-shadow: 1.5px 1.5px 3.2px #2e0670;
-        font-family: 'Book Antiqua';
-        border-bottom: 3px solid #0f2c19;
-    }
-
-    .title {
-        font-size: 3rem;
-        color: #09a0a0;
-        text-indent: 4rem;
-        text-shadow: 1.5px 1.5px 3.2px #2e0670;
-        font-family: 'Book Antiqua';
-    }
-
-    .story {
-        font-size: 3rem;
-        color: #09a0a0;
-        text-indent: 3.6rem;
-        margin-left:2rem;
-        margin-right:3rem;
-        font-size: 30px;
-        text-shadow: 1.5px 1.5px 3.2px #2e0670;
-        font-family:'Book Antiqua';
-    }
-
-    .video {
-        margin-left:30%;
-        border: 3px ridge #6133ad;
-        box-shadow: 1.5px 1.5px 3.2px #2a0070;
-        margin-bottom:2rem;
-    }
-
-    .image {
-        margin-left: 30%;
-        border: 3px ridge #6133ad;
-        box-shadow: 1.5px 1.5px 3.2px #2a0070;
-        width: 600px;
-        height: 300px;
-        margin-bottom: 2rem;
-    } 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaun Anderson's Portfolio</title>
+    <style> 
+        body {
+            background-color: #ECEFF1;
+            color: #1A1A1A;
+            font-family: 'Book Antiqua', serif;
+        }
          
-</style>
+        .text-base {
+            color: #1A1A1A;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            font-family: 'Book Antiqua', serif;
+        }
+         
+        .intro {
+            font-size: 3rem;
+            text-indent: 9.5rem;
+            border-bottom: 3px solid #333333;
+        }
+         
+        .title {
+            font-size: 3rem;
+            text-indent: 4rem;
+        }
+         
+        .story {
+            font-size: 30px;
+            text-indent: 3.6rem;
+            margin-left: 2rem;
+            margin-right: 3rem;
+        }
+         
+        .story-list {
+            font-size: 30px;
+            margin-left: 5rem;
+            color: #1A1A1A;
+            font-family: 'Book Antiqua', serif;
+        }
+         
+        .video {
+            margin-left: 30%;
+            border: 1px solid #6B7280;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+
+        .image {
+            margin-left: 30%;
+            border: 1px solid #6B7280;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            width: 600px;
+            height: 300px;
+            margin-bottom: 2rem;
+        }
+         
+        .project-link {
+            color: #3C4F76;  
+            text-decoration: none;
+            font-family: 'Book Antiqua', serif;
+        }
+
+            .project-link:hover {
+                text-decoration: underline;
+                color: #6B7280;  
+            }
+    </style>
 </head>
 <body>
-    <h1 class="intro">
-        Welcome to my Github portfolio page, my name is Shaun Anderson
+    <h1 class="intro text-base">
+        Welcome to my GitHub portfolio page. My name is Shaun Anderson.
     </h1>
-    <h2 class="title">
-        Game of Life:
+    <h2 class="title text-base">
+        Game of Life
     </h2>
-    <p class="story">
-        Game of Life was my first big project (Made in C++ and wxWidgets). The Game of Life is a concept created by the
-        mathematician John Conway. 
-        Rules: 
-        Any living cell in the current universe with fewer than 2 living neighbors dies in the next generation due to 
-        under-population. If a cell meets this criterion in the universe array, it is marked as dead. Any living cell with 
-        more than 3 living neighbors will die in the next generation due to over-population. If this condition exists in the 
-        universe, the cell is killed. Any living cell with 2 or 3 living neighbors will survive into the next generation. 
-        If this condition exists in the universe, the cell remains alive. Any dead cell with exactly 3 living neighbors will 
-        be born into the next generation due to reproduction. If this condition exists in the universe, that cell is made alive. 
-        My biggest obstacle with this project was implementing the rules, which took me far too long to get correct. By the time
-        I finally got them right, I had fallen pretty far behind. However, I learned something quite valuable: no matter how 
-        difficult things get, you should not quit until the whistle has blown.
+    <p class="story text-base">
+        Game of Life, my first major project, was developed using C++ and wxWidgets. Created by mathematician John Conway, this 
+        cellular automaton follows specific rules for cell survival and reproduction. The rules are as follows: a living cell with 
+        fewer than two living neighbors dies from underpopulation; a living cell with more than three living neighbors dies from 
+        overpopulation; a living cell with two or three living neighbors survives; and a dead cell with exactly three living 
+        neighbors becomes alive. Implementing these rules was my biggest challenge, requiring extensive debugging and testing to 
+        ensure accuracy. Through perseverance, I overcame this hurdle, learning that dedication is critical until a project is 
+        complete.
     </p>
-    <iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/voqheskuASY" frameborder="0" allowfullscreen></iframe>
-    <h2 class="title">
-        Mystery Hotel:
+    <iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/voqheskuASY" title="Game of Life Demo" frameborder="0" allowfullscreen></iframe>
+    <h2 class="title text-base">
+        Mystery Hotel
     </h2>
-    <p class="story">
-        Mystery Hotel was my team's midterm project (made in C# and Unity). The premise: You are trapped in a hotel with 
-        various enemies, and you need to try to escape to the roof where a helicopter is waiting to bring you to safety. My
-        biggest takeaway from this project was that communication is key in absolutely anything because it could affect the
-        work of another teammate.
-        <ul class="story">
-            My tasks:
-            <li>Level 3 design</li>
-            <li>Kill floor</li>
-            <li>Scorched Annihlator</li>
-            <li>Settings</li>
-            <li>Various bug fixes</li>
-        </ul>
+    <p class="story text-base">
+        Mystery Hotel, a midterm team project built in C# and Unity, challenges players to escape a hotel filled with enemies to 
+        reach a helicopter on the roof. My responsibilities included designing Level 3, creating the kill floor mechanic, developing
+        the Scorched Annihilator enemy, implementing settings, and performing various bug fixes. The project taught me the 
+        importance of clear communication, as missteps could impact teammates’ work. Through collaborative testing and iteration,
+        we delivered a functional game.
     </p>
+    <ul class="story-list">
+        <li>Level 3 design</li>
+        <li>Kill floor mechanic</li>
+        <li>Scorched Annihilator enemy</li>
+        <li>Settings implementation</li>
+        <li>Various bug fixes</li>
+    </ul>
     <a href="assets/SA lvl3 display.png" target="_blank">
-        <img class="image" src="assets/SA lvl3 display.png" />
+        <img class="image" src="assets/SA lvl3 display.png" alt="Mystery Hotel Level 3 Design">
     </a>
     <a href="assets/audio settings display.png" target="_blank">
-        <img class="image" src="assets/audio settings display.png" />
+        <img class="image" src="assets/audio settings display.png" alt="Mystery Hotel Audio Settings">
     </a>
     <a href="assets/general settings display.png" target="_blank">
-        <img class="image" src="assets/general settings display.png" />
+        <img class="image" src="assets/general settings display.png" alt="Mystery Hotel General Settings">
     </a>
     <a href="assets/kill floor script display.png" target="_blank">
-        <img class="image" src="assets/kill floor script display.png" />
+        <img class="image" src="assets/kill floor script display.png" alt="Mystery Hotel Kill Floor Script">
     </a>
-    <h2 class="title">
-        Movie Search Application:
+    <h2 class="title text-base">
+        Movie Search Application
     </h2>
-    <p class="story">
-        Next, I chose to create a movie search app in TypeScript and React. This application fetches movie information
-        and images from APIs. You can explore the most popular movies, new releases, browse by various genres, perform searches,
-        and use advanced search features. Clicking on a movie displays its card containing all relevant information. My biggest
-        challenges with this project were learning a new language, building a website, and implementing advanced search 
-        functionality within a month. I mainly overcame these challenges by watching many YouTube tutorials. However, I was filled
-        with euphoria once it was complete. What I learned is that I am capable of learning and adapting to new concepts rather 
-        quickly if I put my mind to it.
+    <p class="story text-base">
+        For my Project and Portfolio IV, I developed a movie search application using TypeScript and React. This app fetches movie 
+        data and images from APIs, allowing users to explore popular films, new releases, genres, and advanced search features. 
+        Clicking a movie displays detailed information. Learning TypeScript, building a responsive website, and implementing 
+        advanced search within a month were significant challenges. By studying YouTube tutorials, I overcame these obstacles, 
+        gaining confidence in my ability to quickly adapt to new technologies.
     </p>
-    <iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/I1r4H8FzXmI" frameborder="0" allowfullscreen></iframe>
-    <!--<h2 class="title">
-        AquaDex:
+    <iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/I1r4H8FzXmI" title="Movie Search App Demo" frameborder="0" allowfullscreen></iframe>
+    <h2 class="title text-base">
+        AquaDex
     </h2>
-    <p>
-        Work in progress.
-    </p>-->
+    <p class="story text-base">
+        AquaDex, my final project at Full Sail, is a marine life index that stores species data, including habitat, diet, 
+        location, and endangered status. Users can browse by species, region, or conservation status, view conservation measures,
+        and search using partial input. The database was initially populated using API Ninjas’ animals API and enhanced with custom
+        web scrapers I developed. Creating moderately complex web scrapers was challenging but rewarding, as it deepened my 
+        technical skills and problem-solving abilities.
+        <a class="project-link" href="https://shaun17.pythonanywhere.com/" target="_blank" title="Visit AquaDex Live">View AquaDex Live</a>
+    </p>
 </body>
 </html>
